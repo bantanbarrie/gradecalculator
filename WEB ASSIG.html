@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Grading System</title>
+</head>
+<body bgcolor="blue">
+<marquee><h2>WELCOME TO MY GRADING SYSTEM</h2></marquee>
+	<script type="text/javascript">
+		var a,b,c,d,e,f,g,h,i,sum,avg;
+		a=prompt("Please enter the grade for Web practial");
+		b=prompt("Please enter the grade for Web theory");
+		c=prompt("Please enter the grade for ECommerce");
+		d=prompt("Please enter the grade for C sharp Practical");
+		e=prompt("Please enter the grade for C sharp Theory");
+		f=prompt("Please enter the grade for Distributed system");
+		g=prompt("Please enter the grade for Network Administration");
+		h=prompt("Please enter the grade for Research Methodology");
+		i=prompt("Please enter the grade for  SPSS");
+		sum=eval(a)+eval(b)+eval(c)+eval(d)+eval(e)+eval(f)+eval(g)+eval(h)+eval(i);
+		document.write("The Total score is "+sum+"<br>");
+		avg=sum/27;
+		document.write("The total GDP IS "+avg+ "Point"+"<br>");
+		if (avg==3.0 || avg<=3.59)
+		{
+			document.write("You have Division 3");
+		}
+		else if(avg==3.6 || avg<4.19)
+		{
+			document.write("You have Division 2");
+		}
+	  else if(avg==4.20 || avg<=5.0)
+		{
+			document.write("You have Division 1");
+		}
+		else if(avg<3.0)
+		{
+			document.write("You Failed");s
+		}
+		else 
+		{
+			document.write("The GDP only stop at 5.0 so please enter the right figures");
+		}
+		
+	</script>
+</body>
+</html>
